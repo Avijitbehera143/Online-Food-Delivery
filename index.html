@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Food Delivery System</h1>
+        <nav>
+            <ul>
+                <li><a href="#manage-food">Manage Food</a></li>
+                <li><a href="#manage-orders">Manage Orders</a></li>
+                <li><a href="#manage-shops">Manage Shops</a></li>
+                <li><a href="#manage-shop-owners">Manage Shop Owners</a></li>
+                <li><a href="#manage-users">Manage Users</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="manage-food">
+            <h2>Manage Food</h2>
+            <form id="food-form">
+                <input type="text" id="food-id" placeholder="Food ID" required>
+                <input type="text" id="food-name" placeholder="Food Name" required>
+                <input type="text" id="food-category" placeholder="Food Category" required>
+                <button type="submit">Add Food</button>
+            </form>
+            <div id="food-list"></div>
+        </section>
+
+        <section id="manage-orders">
+            <h2>Manage Orders</h2>
+            <form id="order-form">
+                <input type="text" id="order-food-id" placeholder="Food ID" required>
+                <input type="date" id="order-date" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <input type="text" id="delivery-address" placeholder="Delivery Address" required>
+                <input type="text" id="payment-status" placeholder="Payment Status" required>
+                <input type="date" id="delivery-date" required>
+                <button type="submit">Add Order</button>
+            </form>
+            <div id="order-list"></div>
+        </section>
+
+        <section id="manage-shops">
+            <h2>Manage Shops</h2>
+            <form id="shop-form">
+                <input type="text" id="shop-id" placeholder="Shop ID" required>
+                <input type="text" id="shop-name" placeholder="Shop Name" required>
+                <input type="text" id="shop-address" placeholder="Shop Address" required>
+                <input type="number" id="bank-account" placeholder="Bank Account" required>
+                <input type="number" id="gst-no" placeholder="GST Number" required>
+                <button type="submit">Add Shop</button>
+            </form>
+            <div id="shop-list"></div>
+        </section>
+
+        <section id="manage-shop-owners">
+            <h2>Manage Shop Owners</h2>
+            <form id="shop-owner-form">
+                <input type="text" id="owner-id" placeholder="Owner ID" required>
+                <input type="text" id="shop-id-owner" placeholder="Shop ID" required>
+                <input type="text" id="owner-name" placeholder="Owner Name" required>
+                <input type="text" id="owner-address" placeholder="Owner Address" required>
+                <button type="submit">Add Shop Owner</button>
+            </form>
+            <div id="shop-owner-list"></div>
+        </section>
+
+        <section id="manage-users">
+            <h2>Manage Users</h2>
+            <form id="user-form">
+                <input type="text" id="user-id" placeholder="User ID" required>
+                <input type="text" id="username" placeholder="User Name" required>
+                <input type="text" id="user-address" placeholder="User Address" required>
+                <input type="number" id="contact" placeholder="Contact Number" required>
+                <button type="submit">Add User</button>
+            </form>
+            <div id="user-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Food Delivery System</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+</body>
+</html>
